@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background: #a8763e;
+  padding: 0.3rem 0;
+}
+
+header .caixa {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .caixa img {
+  width: 5rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li + li {
+  margin-left: 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+  color: #312f2f;
+  font-weight: bold;
+  transition: color 0.2s ease-in;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.produtos {
+  width: 940px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produtos li {
+  text-align: center;
+  width: 30%;
+  padding: 0.8rem;
+  height: 24rem;
+
+  border: 2px solid #242323;
+
+  border-radius: 10px;
+  transition: border-color 0.2s ease-in;
+}
+
+.produtos li:hover {
+  border-color: rgba(211, 80, 19, 0.513);
+}
+
+.produtos li:hover h2 {
+  font-size: 33px;
+}
+
+.produtos li:active {
+  border-color: rgba(19, 211, 109, 0.513);
+}
+
+.produtos li .preco_produto {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: url(../img/bg.jpg);
+  padding: 40px 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 20px;
+}
